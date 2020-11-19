@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->integer('roleid')->unsigned();
-            $table->foreign('roleid')->references('id')->on('Users')->onDelete('cascade');
+            $table->foreign('roleid')->references('id')->on('Roles')->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
         });
