@@ -33,6 +33,6 @@ class CreateTableRents extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_rents');
+        Schema::dropIfExists('Rents');
     }
 }
